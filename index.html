@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Expense Tracker Application Interface</title>
-        <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link rel="shortcut icon" href="expense1.jpeg" type="image/x-icon">
+        <title>Expense Tracker Application Interface</title>
 
     </head>
 
-    <body style="background-color: aqua;">
+    <body >
         <header>
-            <div style="text-align: center;">
-                <h1>AN EXPENSE TRACKER APPLICATION INTERFACE</h1>
+            <div>
+                <h1>AN EXPENSE TRACKER APPLICATION  </h1>
                 <p>Financial management has become a necessity in the modern dynamic world.This Application is ment to enable individual to keep track of their day-to-day financial expenditure  hence promoting responsible usage of finances.</p>
         
             </div>
         </header>
  
         <div>
-            <form >
-                  <h2>Registration</h2>
+            <h2>Registration</h2>
+            <form  action="/submit" method="post">
+                 
                   <label for="fname">First Name</label>
-                  <input type="text" id="fname">    
+                  <input type="text" id="fname" name="fname">    
 
                   <label for="lname">Last Name</label>
-                  <input type="text" id="lname">    <br>  <br>
+                  <input type="text" id="lname" name="lname">    <br>  <br>
 
                   <label for="mycountry">Country</label>
-                  <input type="text" id="mycountry" >   
+                  <input type="text" id="mycountry" name="mycountry" >   
 
                   <label for="mycity">City</label>
-                  <input type="text"  id="mycity">   
+                  <input type="text"  id="mycity" name="mycity">   
 
-                  <label for="myage">Age</label>
-                  <input type="text" id="myage">   
+                  <label for="myemail">Email</label>
+                  <input type="text" id="myemail" name="myemail">
+                  
+                  <label for="mypass">Password</label>
+                  <input type="text" id="mypass"  name="mypass">
 
                   <input type="submit" name="Submit"> 
                    
@@ -40,6 +45,7 @@
         </div>
 
         <table border="1" >
+            <Caption>User Details</Caption>
             <tr>
                 <th>Name</th>
                 <th>Email</th>
@@ -53,12 +59,15 @@
         </table>
         <br>   <br>
 
-        <img src="expense1.avif" alt="expense graph" style="width: 300px; height: 200px;">
+        <img src="expense1.jpeg" alt="expense graph" style="width: 300px; height: 200px;">
         <br>
 
-        <a href="https://google.com" target="_blank">GOOGLE IT!</a>
+        
 
-        <footer style="text-align: center;"> &lt;&lt;&copy; Daniel Chacha 2024&gt;&gt;  </footer>
+        <footer> 
+            <a href="https://google.com" target="_blank">GOOGLE IT!</a>
+            <p>&lt;&lt;&copy; Daniel Chacha 2024&gt;&gt;</p>
+        </footer>
 
     </body>
 </html>
